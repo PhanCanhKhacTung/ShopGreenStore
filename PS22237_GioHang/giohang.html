@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Green Store </title>
+    <link rel="stylesheet" href="css/giohang.css">
+    <script type="text/javascript" src="GioHang.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(238, 235, 234);
+
+        }
+
+        .wrapper {
+            width: 750px;
+            float: left;
+
+        }
+
+        .monHang {
+            width: 250px;
+            position: relative;
+            height: 240px;
+            float: left;
+            margin-bottom: 130px;
+        }
+
+        .monHang>#hinh {
+            margin-left: 30px;
+            margin-bottom: 20px;
+
+        }
+
+        .muaHang {
+            height: 38px;
+            position: absolute;
+            top: 290px;
+            border: 1px solid #61e92f;
+            left: 30px;
+            width: 200px;
+            font-weight: bold;
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .gia {
+            position: absolute;
+            float: left;
+            top: 8px;
+            left: 12px;
+        }
+
+        .themHang {
+            float: right;
+        }
+
+        .themHang button {
+            width: 80px;
+            height: 35px;
+        }
+
+        .name {
+            position: absolute;
+            top: 255px;
+            left: 70px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }
+
+        .nutMua {
+
+            background-color: #3be01d;
+            color: aliceblue;
+            font-weight: bold;
+            border: none;
+        }
+
+        .nutMua:hover {
+            background-color: rgb(219, 21, 21);
+            color: white;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+
+            margin-left: 50px;
+            margin-top: 60px;
+            margin-bottom: 100px;
+            width: 400px
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+        }
+
+        .container2 {
+            float: right;
+
+            width: 500px;
+        }
+
+        td {
+            padding-right: 10px;
+        }
+
+        .Xoa {
+            background-color: dimgray;
+            color: aliceblue;
+            padding: 5px 10px 5px 10px;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .gioHangMua {
+            margin-top: 20px;
+            height: 500px;
+            overflow-y: scroll;
+            border: 1px solid #4bc22d;
+        }
+
+        .container2>h3 {
+            float: right;
+            margin: 10px;
+            font-family:Arial, Helvetica, sans-serif;
+
+        }
+.container2 h1>img {
+
+    position: absolute;
+    bottom: 105px;
+    padding-left: 15px;
+}
+        input:hover {
+            background-color: rgb(44, 198, 44);
+        }
+
+        .soLuong {
+
+            width: 40px;
+            height: 20px;
+            position: relative;
+        }
+
+        .Tang {
+            border: 1px solid black;
+            width: 20px;
+            height: 10px;
+            position: absolute;
+            top: -2px;
+            left: 28px;
+        }
+
+        .Giam {
+
+            width: 20px;
+            height: 10px;
+            font-size: 10px;
+            position: absolute;
+            top: 13px;
+            left: 28px;
+            border: 1px solid black;
+
+        }
+
+        .HienSo {
+            position: absolute;
+            top: 0px;
+            left: 7px;
+            color: black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .nutThem {
+            z-index: -1;
+        }
+    
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="box1 ">
+                <div class="container_1">
+                    <div class="diachi">
+                        <img src="images/address-100 (1).png" alt="diachi"> </img>
+                        391A, Nam Kỳ Khởi Nghĩa, Phường 14, Quận 3, Thành phố Hồ Chí Minh
+                    </div>
+                    <div class="sdt">
+                        <img src="images/phone-100.png" alt="phone"> </img>
+                        0965989274
+                    </div>
+                    <div class="taikhoan">
+                        <img src="images/avatar.png" alt="avatar"> </img>
+                        <a href="taikhoan.html">Tài Khoản</a>
+                    </div>
+                    <div class="timkiem">
+                        <input type="text" placeholder=" Tìm kiếm ...">
+                        <a href="#"> <img src="images/search-48.png" alt="timkiem"></a>
+                    </div>
+                    <div class="giohang">
+                        <a href="giohang.html"><img src="images/shopping-cart-60.png" alt="giohang"> </img></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="box2">
+                <a href="index.html"><img src="images/logo.JPG" alt="logo"></a>
+            </div>
+        </header>
+        <nav class="hmenu ">
+            <ul>
+                <li> <a href="index.html">TRANG CHỦ</a></li>
+                <li> <a href="gioithieu.html">GIỚI THIỆU</a>
+                <ul>
+                    <li><a href="#">Nâng tầm đẳng cấp “Chiếc Điện Thoại” Thêm ngay ỐP LƯNG chính hãng GREEN STORE hân hạnh được phục vụ quý khách </a></li>
+                </ul>
+                </li>
+                <li><a href="sanpham.html">SẢN PHẨM</a>
+                    <ul>
+                        <li><a href="#">  ỐP LƯNG CHÚ ẾCH SIÊU CUTE </a></li>
+                        <li><a href="#">  ỐP LƯNG CUTE HOT TREND NĂM 2022</a></li>
+                        <li><a href="#">  ỐP LƯNG ĐIỆN THOẠI CHÍNH HÃNG</a></li>
+                    </ul>
+                </li>
+                <li> <a href="https://www.facebook.com/newcasephone/">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h2>SẢN PHẨM </h2>
+    <div class="wrapper">
+        <div class="monHang">
+            <img id="hinh" src="images/1.jpg" width="200" height="250">
+            <p class="name">Sản phẩm 1</p>
+            <div class="muaHang">
+                <div class="gia"> <span class="soTien">30.000</span></div>
+                <div class="themHang"> <button class="nutMua"
+                        onclick="themMatHang('images/1.jpg','Sản phẩm 1',30.000,'A')">
+                        Mua</button></div>
+            </div>
+        </div>
+        <div class="monHang">
+            <img id="hinh" src="images/2.jpg" width="200" height="250">
+            <p class="name">Sản phẩm 2</p>
+            <div class="muaHang">
+                <div class="gia"> <span class="soTien">25.000</span></div>
+                <div class="themHang"> <button class="nutMua"
+                        onclick="themMatHang('images/2.jpg','Sản phẩm 2',25.000,'B')">
+                        Mua</button></div>
+            </div>
+        </div>
+        <div class="monHang">
+            <img id="hinh" src="images/3.jpg" width="200" height="250">
+            <p class="name">Sản phẩm 3</p>
+            <div class="muaHang">
+                <div class="gia"> <span class="soTien">40.000</span></div>
+                <div class="themHang"> <button class="nutMua"
+                        onclick="themMatHang('images/3.jpg','Sản phẩm 3',40.000,'C')">
+                        Mua</button></div>
+            </div>
+        </div>
+        <div class="monHang">
+            <img id="hinh" src="images/4.jpg" width="200" height="250">
+            <p class="name">Sản phẩm 4</p>
+            <div class="muaHang">
+                <div class="gia"> <span class="soTien">45.000</span></div>
+                <div class="themHang"> <button class="nutMua"
+                        onclick="themMatHang('images/4.jpg','Sản phẩm 4',45.000,'D')">
+                        Mua</button></div>
+            </div>
+        </div>
+        <div class="monHang">
+            <img id="hinh" src="images/5.jpg" width="200" height="250">
+            <p class="name">Sản phẩm 5</p>
+            <div class="muaHang">
+                <div class="gia"> <span class="soTien">40.000</span></div>
+                <div class="themHang"> <button class="nutMua"
+                        onclick="themMatHang('images/5.jpg','Sản phẩm 5',40.000,'E')">
+                        Mua</button></div>
+            </div>
+        </div>
+        <div class="monHang">
+            <img id="hinh" src="images/6.jpg" width="200" height="250">
+            <p class="name">Sản phẩm 6</p>
+            <div class="muaHang">
+                <div class="gia"> <span class="soTien">30.000</span></div>
+                <div class="themHang"> <button class="nutMua"
+                        onclick="themMatHang('images/6.jpg','Sản phẩm 6',30.000,'F')">
+                        Mua</button></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <h1>Giỏ hàng <img src="images/shopping-cart-60.png " alt=""></h1>
+        <div class="gioHangMua" id="gioMuaHang">
+            <!-- Mặt hàng sẽ được thêm vào đây -->
+        </div>
+        <h3 id="tongTien">Tổng tiền : 0</h3>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+.container{
+	max-width: 100%;
+	/* background-color: rgb(238, 229, 234); */
+	background-color: white;
+}
+.container_1 {
+	max-width: 100%;
+	margin: 0 auto;
+
+  min-height: 600px;
+}
+header{
+	
+	width:100%;
+	height: 0px;
+	padding-bottom: 330px;
+}
+header .box1
+	{
+	float: left;
+	position: relative;
+    background-color:white;
+	width:100%;
+	height: 50px;
+	color:white;	  
+	font-family: Arial, Helvetica, sans-serif;
+	}
+.box1 .container_1{
+	position: relative;
+	color:black;	  
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	width: 1180px;
+	margin: 0 auto;
+	height: 30px;
+	margin-top: 12px;
+}
+
+.box1 .diachi img{
+	height: 16px;
+    padding-right: 3px;
+}
+.diachi{
+	float: left;
+	width: 500px;
+	
+}
+.box1 .sdt img{
+	height: 17px;
+	padding-right: 3px;
+}
+.sdt{
+	float:left;
+	width: 180px;
+	
+}
+.box1 .taikhoan img{
+	height: 17px;
+	padding-right: 3px;
+}
+.taikhoan{
+	float:left;
+	width: 180px;
+}
+.taikhoan>a{
+	text-decoration: none;
+	color: black;
+}
+
+.timkiem>input{
+	float:left;
+	width: 140px;
+	height: 27px;
+	border-radius: 3px;
+	border: 1px solid rgba(189, 178, 178, 0.856); 
+	
+}
+.box1 .timkiem img{
+	float: left;
+	padding-left: 5px;
+	height: 25px;
+	
+}
+.box1 .giohang img{
+	height: 30px;
+	padding-right: 3px;
+}
+.giohang{
+float: right;
+width: 30px;
+	
+}
+
+header>.box2{
+width: 1180px;
+height: 330px;
+margin: 0 auto;
+}
+header>.box2>a img{
+height: 100%;
+width: 100%;
+}
+p{
+	font-size: 17pt;
+}
+nav{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	background-color: #44c735;
+	border-bottom:  5px double rgb(238, 229, 234);	
+	border-top:  5px double rgb(238, 229, 234);	
+	z-index: 100000; 
+}
+
+.hmenu>ul>li{
+	
+    display: inline-block;
+    position: relative;
+}
+.hmenu>ul>li>a{
+	display: block;
+
+}
+.hmenu>ul{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    border-radius:3px;
+    text-align:center;
+}
+.hmenu>ul>li>a{
+    text-decoration:none;
+    font-size:15pt;
+    color:white;
+    padding:0 70px;
+    line-height:60px;
+	font-weight: 550;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.hmenu>ul>li>a:hover{
+    color: black;
+}
+.hmenu ul ul{
+    padding:0px;
+    margin:0px;
+    position: absolute;
+    display: none;
+    list-style: none;
+    border-radius:3px;
+    width:200px;
+    background-color: white;
+	box-shadow:0 0 1px gray;
+	border: 1px solid #4bec1a;
+	
+}
+.hmenu ul ul a{
+    display: block;
+    line-height:40px;
+    color:#35df13;
+    text-decoration:none;
+    font-size:larger;
+	padding:0 10px;
+	text-align: left;
+}
+.hmenu>ul>li:hover>ul{
+    display: block;
+}
+.hmenu ul ul a:hover{
+    background-color: white;
+    color:  #25dd35;
+}
+
+.menu{
+	text-align: center;
+	
+}
